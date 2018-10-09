@@ -1,6 +1,6 @@
 {
   "name": "dxm-bisheng",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Transform Markdown(and other static files with transformers) into a SPA website using React.",
   "bin": {
     "bisheng": "./bin/bisheng"
@@ -59,16 +59,16 @@
   },
   "homepage": "https://github.com/benjycui/bisheng#readme",
   "dependencies": {
-    "autoprefixer": "^7.1.4",
     "@babel/core": "^7.1.0",
-    "babel-loader": "^8.0.2",
-    "babel-plugin-add-module-exports": "^1.0.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-decorators": "^7.1.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^7.1.4",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-add-module-exports": "^1.0.0",
     "case-sensitive-paths-webpack-plugin": "^2.0.0",
     "chalk": "^1.1.3",
     "commander": "^2.9.0",
