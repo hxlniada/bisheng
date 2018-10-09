@@ -106,13 +106,13 @@ export default function getWebpackCommonConfig() {
         disable: false,
         allChunks: true,
       }),
-      new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: context.bishengConfig.htmlTemplate,
-        inject: true,
-        chunksSortMode: 'dependency',
-        alwaysWriteToDisk: true,
-      }),
+      // new HtmlWebpackPlugin({
+      //   filename: 'index.html',
+      //   template: context.bishengConfig.htmlTemplate,
+      //   inject: true,
+      //   chunksSortMode: 'dependency',
+      //   alwaysWriteToDisk: true,
+      // }),
       new CaseSensitivePathsPlugin(),
       new webpack.ProgressPlugin((percentage, msg, addInfo) => {
         const stream = process.stderr;

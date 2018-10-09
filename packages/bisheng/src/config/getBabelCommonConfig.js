@@ -14,7 +14,9 @@ export default function babel() {
     plugins: [
       require.resolve('babel-plugin-add-module-exports'),
       require.resolve('@babel/plugin-proposal-class-properties'),
-      require.resolve('@babel/plugin-proposal-decorators'),
+      [require.resolve('@babel/plugin-proposal-decorators'), {
+        decoratorsBeforeExport: true
+      }],
       require.resolve('@babel/plugin-proposal-object-rest-spread'),
     ],
   };

@@ -1,6 +1,6 @@
 {
-  "name": "bisheng-plugin-react",
-  "version": "0.6.3",
+  "name": "dxm-bisheng-plugin-react",
+  "version": "1.0.2",
   "description": "To convert JSX which is written in Markdown to React.Element.",
   "repository": {
     "type": "git",
