@@ -4,8 +4,8 @@ export default function babel() {
   return {
     cacheDirectory: tmpdir(),
     presets: [
-      'react',
-      [require.resolve('babel-preset-env'), {
+      '@babel/preset-react',
+      [require.resolve('@babel/preset-env'), {
         targets: {
           browsers: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 8', 'iOS >= 8', 'Android >= 4'],
         },
@@ -13,9 +13,9 @@ export default function babel() {
     ],
     plugins: [
       require.resolve('babel-plugin-add-module-exports'),
-      require.resolve('babel-plugin-transform-class-properties'),
-      require.resolve('babel-plugin-transform-decorators-legacy'),
-      require.resolve('babel-plugin-transform-object-rest-spread'),
+      require.resolve('@babel/plugin-proposal-class-properties'),
+      require.resolve('@babel/plugin-proposal-decorators'),
+      require.resolve('@babel/plugin-proposal-object-rest-spread'),
     ],
   };
 }

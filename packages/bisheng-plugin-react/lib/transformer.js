@@ -1,9 +1,9 @@
 'use strict';
 
-const babel = require('babel-core');
-const types = require('babel-types');
-const traverse = require('babel-traverse').default;
-const generator = require('babel-generator').default;
+const babel = require('@babel/core');
+const types = require('@babel/types');
+const traverse = require('@babel/traverse').default;
+const generator = require('@babel/generator').default;
 
 const errorBoxStyle = {
   padding: 10,
@@ -29,16 +29,16 @@ function requireGenerator(varName, moduleName) {
 
 const defaultBabelConfig = {
   presets: [
-    'react',
-    ['env', {
+    '@babel/preset-react',
+    ['@babel/preset-env', {
       targets: {
         browsers: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 8', 'iOS >= 8', 'Android >= 4'],
       },
     }],
   ],
   plugins: [
-    'transform-class-properties',
-    'transform-object-rest-spread',
+    '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-proposal-object-rest-spread',
   ],
 };
 
