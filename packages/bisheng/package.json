@@ -1,6 +1,6 @@
 {
   "name": "dxm-bisheng",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Transform Markdown(and other static files with transformers) into a SPA website using React.",
   "bin": {
     "bisheng": "./bin/bisheng"
@@ -79,7 +79,7 @@
     "gh-pages": "^1.0.0",
     "history": "^3.0.0",
     "html-webpack-harddisk-plugin": "^0.2.0",
-    "html-webpack-plugin": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
     "jsonml-to-react-element": "^1.0.0",
     "jsonml.js": "^0.1.0",
     "less": "~2.7.2",

@@ -4,6 +4,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
 import FriendlyErrorsWebpackPlugin from 'friendly-errors-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import HtmlWebpackHarddiskPlugin from 'html-webpack-harddisk-plugin';
 import chalk from 'chalk';
 
 import context from '../context';
@@ -106,13 +107,14 @@ export default function getWebpackCommonConfig() {
         disable: false,
         allChunks: true,
       }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'index.html',
-      //   template: context.bishengConfig.htmlTemplate,
-      //   inject: true,
-      //   chunksSortMode: 'dependency',
-      //   alwaysWriteToDisk: true,
-      // }),
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: context.bishengConfig.htmlTemplate,
+        inject: true,
+        chunksSortMode: 'dependency',
+        alwaysWriteToDisk: true,
+      }),
+      new HtmlWebpackHarddiskPlugin(),
       new CaseSensitivePathsPlugin(),
       new webpack.ProgressPlugin((percentage, msg, addInfo) => {
         const stream = process.stderr;
